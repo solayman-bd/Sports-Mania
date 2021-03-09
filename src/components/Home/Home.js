@@ -1,10 +1,13 @@
 import React from "react";
+import Header from "../Header/Header";
+import LeagueContainer from "../LeagueContainer/LeagueContainer";
 
 const Home = () => {
   return (
-    <div>
-      <h1>I am from Home</h1>
-    </div>
+    <>
+      <Header></Header>
+      <LeagueContainer></LeagueContainer>
+    </>
   );
 };
 

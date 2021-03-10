@@ -5,3 +5,10 @@
   transform: scale(0.8);
   color: violet;
 }
+.social-media-section {
+  width: 40%;
+}
+
+.social-icons {
+  width: 100%;
+}

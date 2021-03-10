@@ -43,16 +43,24 @@ const DetailsInfoDescription = (props) => {
           eirmod, ut ea kasd sea consetetur. Kasd.
         </p>
       </div>
-      <div className="w-25 mx-auto mt-3 mb-5">
-        <a href={facebook} target="_blank">
-          <FaFacebook className="icons mx-1" />
-        </a>
-        <a href={youtube} target="_blank">
-          <FaYoutube className="icons mx-1" />
-        </a>
-        <a href={twitter} target="_blank">
-          <FaTwitter className="icons mx-1 " />
-        </a>
+      <div className="row social-media-section mx-auto mt-3 mb-5">
+        <div className="col-4 social-icons mx-auto">
+          {" "}
+          <a href={facebook} target="_blank">
+            <FaFacebook className="icons mx-1" />
+          </a>
+        </div>
+        <div className="col-4 social-icons mx-auto">
+          {" "}
+          <a href={youtube} target="_blank">
+            <FaYoutube className="icons mx-1" />
+          </a>
+        </div>
+        <div className="col-4 social-icons mx-auto">
+          <a href={twitter} target="_blank">
+            <FaTwitter className="icons mx-1 " />
+          </a>
+        </div>
       </div>
     </div>
   );

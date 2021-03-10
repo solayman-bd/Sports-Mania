@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import "../../../node_modules/bootstrap/dist/css/bootstrap.min.css";
+import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 
 const TeamCart = (props) => {
   const { idLeague, strLeague, strSport } = props.leagueDetails;
@@ -23,7 +24,10 @@ const TeamCart = (props) => {
         <div className="card-body text-center">
           <h5 className="card-title">{strLeague}</h5>
           <p className="card-text">Sports Type : {strSport}</p>
-          <button className="btn btn-primary">Show Details</button>
+
+          <Link to={`/league/${idLeague}`}>
+            <button className="btn btn-primary"> Show Details</button>
+          </Link>
         </div>
       </div>
     </div>

@@ -1,9 +1,28 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
+import { useParams } from "react-router-dom";
+import HeaderFromDetails from "../HeaderFromDetails/HeaderFromDetails";
+
+import LeagueDetailsContainer from "../LeagueDetailsContainer/LeagueDetailsContainer";
 
 const LeagueDetails = () => {
+  let { leagueKey } = useParams();
+  const [teamDetails, setTeamDetails] = useState({});
+  useEffect(() => {
+    fetch(
+      `https://www.thesportsdb.com/api/v1/json/1/lookupleague.php?id=${leagueKey}`
+    )
+      .then((res) => res.json())
+      .then((data) => setTeamDetails(data.leagues[0]));
+  }, [leagueKey]);
+
   return (
     <div>
-      <h1>I am from League Details</h1>
+      <HeaderFromDetails
+        headerImageLogo={teamDetails.strBadge}
+      ></HeaderFromDetails>
+      <LeagueDetailsContainer
+        teamDetails={teamDetails}
+      ></LeagueDetailsContainer>
     </div>
   );
 };

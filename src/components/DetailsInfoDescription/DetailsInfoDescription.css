@@ -1,0 +1,7 @@
+.icons {
+  font-size: 2rem;
+}
+.icons:hover {
+  transform: scale(0.8);
+  color: violet;
+}

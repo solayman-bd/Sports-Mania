@@ -15,8 +15,6 @@ const LeagueDetails = () => {
       .then((data) => setTeamDetails(data.leagues[0]));
   }, [leagueKey]);
 
-  console.log(teamDetails);
-
   return (
     <div>
       <HeaderFromDetails

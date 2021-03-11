@@ -1,20 +1,14 @@
 .header-from-details {
   height: 300px;
-
+  display: flex;
+  align-items: center;
+  justify-content: center;
   background-position: center; /* Center the image */
   background-repeat: no-repeat; /* Do not repeat the image */
   background-size: cover; /* Resize the background image to cover the entire container */
 }
 
-.parent {
-  height: 300px;
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
 .child {
-  background-color: #ffff00;
   width: 180px;
   height: 180px;
 }

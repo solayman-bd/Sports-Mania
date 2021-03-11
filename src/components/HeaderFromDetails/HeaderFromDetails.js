@@ -9,10 +9,8 @@ const HeaderFromDetails = (props) => {
       style={{ backgroundImage: `url(${headerBanner})` }}
       className="header-from-details bg-image"
     >
-      <div className="parent">
-        <div className="child">
-          <img className="img-fluid" src={headerImageLogo} alt="" />
-        </div>
+      <div className="child">
+        <img className="img-fluid" src={headerImageLogo} alt="" />
       </div>
     </div>
   );

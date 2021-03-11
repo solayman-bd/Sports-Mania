@@ -9,7 +9,7 @@ const Header = () => {
       className="header-part"
       style={{ backgroundImage: `url(${headerImage})` }}
     >
-      <h1 className="text-center header-text">Football Freak</h1>
+      <h1 className="text-center header-text">Sports Freak</h1>
     </div>
   );
 };
